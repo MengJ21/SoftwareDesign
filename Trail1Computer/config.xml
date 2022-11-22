@@ -1,0 +1,22 @@
+<hardware>
+    <CPU>
+        <name>i9</name>
+        <description>嘎嘎牛，嘎嘎强</description>
+        <price>9000</price>
+    </CPU>
+    <CPU>
+        <name>i7</name>
+        <description>一般牛，一般强</description>
+        <price>7000</price>
+    </CPU>
+    <CPU>
+        <name>i5</name>
+        <description>比较牛，比较强</description>
+        <price>5000</price>
+    </CPU>
+    <CPU>
+        <name>i3</name>
+        <description>不牛，拉了</description>
+        <price>3000</price>
+    </CPU>
+</hardware>
