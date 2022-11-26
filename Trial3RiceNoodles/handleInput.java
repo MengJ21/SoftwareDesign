@@ -34,25 +34,20 @@ public class handleInput {
     public static IRiceNoodles computeResult(Map<String, Integer> map,IRiceNoodles noodlesType) {
         IRiceNoodles riceNoodles = null;
         if (map.get("牛肉") > 0) {
-            IRiceNoodles riceNoodles1 = new Beef(noodlesType,map.get("牛肉"));
-            riceNoodles = riceNoodles1;
+            riceNoodles = new Beef(noodlesType,map.get("牛肉"));
         }
         if (map.get("鸡蛋") > 0) {
             if (riceNoodles == null) {
-                IRiceNoodles riceNoodles2 = new Egg(noodlesType,map.get("鸡蛋"));
-                riceNoodles = riceNoodles2;
+                riceNoodles = new Egg(noodlesType,map.get("鸡蛋"));
             } else {
-                IRiceNoodles riceNoodles2 = new Egg(riceNoodles,map.get("鸡蛋"));
-                riceNoodles = riceNoodles2;
+                riceNoodles = new Egg(riceNoodles,map.get("鸡蛋"));
             }
         }
         if (map.get("豆腐") > 0) {
             if (riceNoodles == null) {
-                IRiceNoodles riceNoodles3 = new ToFu(noodlesType,map.get("豆腐"));
-                riceNoodles = riceNoodles3;
+                riceNoodles = new ToFu(noodlesType,map.get("豆腐"));
             } else {
-                IRiceNoodles riceNoodles3 = new ToFu(riceNoodles,map.get("豆腐"));
-                riceNoodles = riceNoodles3;
+                riceNoodles = new ToFu(riceNoodles,map.get("豆腐"));
             }
         }
         return riceNoodles;

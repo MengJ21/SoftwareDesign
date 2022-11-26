@@ -7,7 +7,7 @@ import java.awt.event.ActionListener;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Gui {
+public class GUI {
     private static String RNType = "";
     private static Double price = 0.0;
     private static String res = "未选购";
@@ -120,19 +120,11 @@ public class Gui {
         jPanel2.add(jPanel22);
 
         JButton btn = new JButton("确定");
-        btn.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                Result result = handleInput.computeOrder(RNType, resultMap);
-                Gui.price = result.getSum();
-                Gui.res = result.getSelectInfo();
-                System.out.println(price+res);
-            }
-        });
+
 
         JPanel jPanel3 = new JPanel();
         JLabel jLabel13 = new JLabel("描述： ");
-        JTextField jTextField3 = new JTextField(Gui.res,10);
+        JTextField jTextField3 = new JTextField(GUI.res,20);
         jPanel3.add(jLabel13);
         jPanel3.add(jTextField3);
 
@@ -141,12 +133,22 @@ public class Gui {
 
         JPanel jPanel4 = new JPanel();
         JLabel jLabel14 = new JLabel("价格： ");
-        JTextField jTextField4 = new JTextField(String.valueOf(Gui.price),3);
+        JTextField jTextField4 = new JTextField(String.valueOf(GUI.price),3);
         JLabel jLabel15 = new JLabel("元");
         jPanel4.add(jLabel14);
         jPanel4.add(jTextField4);
         jPanel4.add(jLabel15);
-
+        btn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Result result = handleInput.computeOrder(RNType, resultMap);
+                GUI.price = result.getSum();
+                GUI.res = result.getSelectInfo();
+                System.out.println(price+res);
+                jTextField4.setText(String.valueOf(price));
+                jTextField3.setText(res);
+            }
+        });
 
         jPanel0.add(jPanel1);
         jPanel0.add(jPanel2);

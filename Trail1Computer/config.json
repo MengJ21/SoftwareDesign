@@ -1,0 +1,117 @@
+{
+  "CPU": {
+    "i9": {
+      "type": "i9",
+      "description": "i9Cpu，嘎嘎牛，嘎嘎强",
+      "price": "9000"
+    },
+    "i7": {
+      "type": "i7",
+      "description": "i7Cpu，比较牛，比较强",
+      "price": "7000"
+    },
+    "i5": {
+      "type": "i5",
+      "description": "i5Cpu，嘎嘎牛，嘎嘎强",
+      "price": "5000"
+    },
+    "i3": {
+      "type": "i3",
+      "description": "i3Cpu，嘎嘎牛，嘎嘎强",
+      "price": "3000"
+    }
+  },
+  "GPU": {
+    "3090Ti": {
+      "type": "3090Ti",
+      "description": "3090Ti，3A大作畅想，为所欲为。",
+      "price": 5000
+    },
+    "3080Ti": {
+      "type": "3080Ti",
+      "description": "3080Ti，大型游戏随便玩，无所顾忌。",
+      "price": 4000
+    },
+    "3080": {
+      "type": "3080",
+      "description": "3080，超高性能，助你起飞。",
+      "price": 3000
+    },
+    "3060": {
+      "tpe": "3060",
+      "description": "3060，强力性能，冲击游戏品质。",
+      "price": 2500
+    },
+    "2080Ti": {
+      "type": "2080Ti",
+      "description": "2080Ti，中级性能，满足需求。",
+      "price": 2300
+    },
+    "2080": {
+      "type": "2080",
+      "description": "2080，中级性能，一般满足。",
+      "price": 2000
+    }
+  },
+  "Disk": {
+    "4T": {
+      "type": "4T",
+      "description": "4T硬盘，超大容量",
+      "price": "2000"
+    },
+    "2T": {
+      "type": "2T",
+      "description": "2T硬盘，巨大容量",
+      "price": "1000"
+    },
+    "1T": {
+      "type": "1T",
+      "description": "1T硬盘，大容量",
+      "price": "500"
+    },
+    "512G": {
+      "type": "512G",
+      "description": "硬盘512g，容量不够",
+      "price": "250"
+    }
+  },
+  "Mainboard": {
+    "ATX": {
+      "type": "ATX",
+      "description": "ATX主板",
+      "price": "500"
+    },
+    "M-ATX": {
+      "type": "M-ATX",
+      "description": "M-ATX主板",
+      "price": "400"
+    },
+    "MINI-ITX": {
+      "type": "MINI-ITX",
+      "description": "MINI-ITX主板",
+      "price": "300"
+    }
+  },
+  "Memory": {
+    "64G": {
+      "type": "64G",
+      "description": "64G内存，实力强悍",
+      "price": "5000"
+    },
+    "16G": {
+      "type": "16G",
+      "description": "16G内存，够用",
+      "price": "2000"
+    },
+    "32G": {
+      "type": "32G",
+      "description": "32G内存，实力超强",
+      "price": "3000"
+    },
+    "8G": {
+      "type": "8G",
+      "description": "8G内存，不够用",
+      "price": "1000"
+    }
+  }
+}
